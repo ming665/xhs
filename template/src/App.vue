@@ -30,7 +30,7 @@
     }
   }
 }
-{{if_eq}}
+{{/if_eq}}
 {{#if_eq cssPreprocessor "sass"}}
 #nav {
   padding: 30px;
@@ -44,7 +44,7 @@
     }
   }
 }
-{{if_eq}}
+{{/if_eq}}
 {{#if_eq cssPreprocessor "stylus"}}
 #nav
   padding 30
@@ -58,7 +58,7 @@
     
   }
 }
-{{if_eq}}
+{{/if_eq}}
 {{#unless cssPreprocessor}}
 #nav {
   padding: 30px;
