@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style {{#if_eq cssPreprocessor "less"}}lang="less"{{/if_eq}}{{#if_eq cssPreprocessor "sass"}}lang="sass"{{/if_eq}}{{#if_eq cssPreprocessor "stylus"}}lang="stylus"{{/if_eq}}>
+<style {{#if_eq cssPreprocessor "less"}}lang="less"{{/if_eq}}{{#if_eq cssPreprocessor "sass"}}lang="scss"{{/if_eq}}{{#if_eq cssPreprocessor "stylus"}}lang="stylus"{{/if_eq}}>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
