@@ -52,7 +52,7 @@ module.exports = {
       message: 'Author',
     },
     vuex: {
-      when: 'isNotTest && launcher  ',
+      when: 'isNotTest',
       type: 'confirm',
       message: 'Install Vuex?',
     },
