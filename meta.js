@@ -51,11 +51,6 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
-    launcher: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install @xhs-launcher?',
-    },
     vuex: {
       when: 'isNotTest && launcher  ',
       type: 'confirm',
@@ -125,7 +120,7 @@ module.exports = {
     'test/unit/specs/index.js': "unit && runner === 'karma'",
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
-    'src/config/sotres.config.js': 'vuex',
+    'src/config/stores.config.js': 'vuex',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
