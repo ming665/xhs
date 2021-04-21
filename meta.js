@@ -56,15 +56,10 @@ module.exports = {
       type: 'confirm',
       message: 'Install @xhs-launcher?',
     },
-    storePlugin: {
-      when: 'isNotTest && launcher',
+    vuex: {
+      when: 'isNotTest && launcher  ',
       type: 'confirm',
-      message: 'Use storePlugin?',
-    },
-    authPlugin: {
-      when: 'isNotTest && storePlugin && authPlugin',
-      type: 'confirm',
-      message: 'Use authPlugin?',
+      message: 'Install Vuex?',
     },
     cssPreprocessor: {
       when: 'isNotTest',
@@ -130,7 +125,7 @@ module.exports = {
     'test/unit/specs/index.js': "unit && runner === 'karma'",
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
-    'src/router/**/*': 'router',
+    'src/config/sotres.config.js': 'vuex',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

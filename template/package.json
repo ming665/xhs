@@ -17,12 +17,9 @@
     "@xhs/fe-api-sign": "^1.0.0",
     "@xhs/http": "^1.0.0",
     "@xhs/launcher": "^1.0.3",
-    {{#authPlugin}}
-    "@xhs/launcher-plugin-auth": "^1.0.1",
-    {{/authPlugin}}
-    {{#storePlugin}}
+    {{#vuex}}
     "@xhs/launcher-plugin-store": "^1.0.0",
-    {{/storePlugin}}
+    {{/vuex}}
     "@xhs/logger": "^1.0.0"{{/launcher}}
   },
   "devDependencies": {
