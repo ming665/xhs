@@ -1,0 +1,55 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"{{#launcher}},
+    "@xhs/fe-api-sign": "^1.0.0",
+    "@xhs/http": "^1.0.0",
+    "@xhs/launcher": "^1.0.3",
+    {{#authPlugin}}
+    "@xhs/launcher-plugin-auth": "^1.0.1",
+    {{/authPlugin}}
+    {{#storePlugin}}
+    "@xhs/launcher-plugin-store": "^1.0.0",
+    {{/storePlugin}}
+    "@xhs/logger": "^1.0.0"{{/launcher}}
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    {{#if_eq cssPreprocessor "sass"}}
+    "node-sass": "^5.0.0",
+    "sass-loader": "10.1.1",
+    {{/if_eq}}
+    {{#if_eq cssPreprocessor "less"}}
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    {{/if_eq}}
+    {{#if_eq cssPreprocessor "stylus"}}
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
+    {{/if_eq}}
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
