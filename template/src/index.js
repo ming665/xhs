@@ -16,9 +16,9 @@ const app = new Launcher('#app', {
   routes: routesConfig.routes,
   http: httpConfig,
 })
-{{#storePlugin}}
+{{#vuex}}
 app.use(storePlugin, storesConfig)
-{{/storePlugin}}
+{{/vuex}}
 
 app.start(App)
 

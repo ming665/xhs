@@ -20,7 +20,9 @@
     {{#vuex}}
     "@xhs/launcher-plugin-store": "^1.0.0",
     {{/vuex}}
-    "@xhs/logger": "^1.0.0"{{/launcher}}
+    "@xhs/logger": "^1.0.0",{{/launcher}}
+    "axios": "^0.21.1",
+    "md5": "^2.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

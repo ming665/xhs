@@ -83,7 +83,7 @@ module.exports = {
         },
         {
           name: 'Do not use',
-          value: 'Do not use',
+          value: false,
           short: 'Do not use'
         }
       ]
