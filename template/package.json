@@ -11,18 +11,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.4.9",
-    "vuex": "^3.6.0",
     "@xhs/fe-api-sign": "^1.0.0",
     "@xhs/http": "^1.0.0",
     "@xhs/launcher": "^1.0.0",
     {{#vuex}}
     "@xhs/launcher-plugin-store": "^1.0.0",
     {{/vuex}}
-    "@xhs/logger": "^1.0.0",
-    "axios": "^0.21.1",
-    "md5": "^2.3.0"
+    "@xhs/logger": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
