@@ -16,7 +16,7 @@
     "vuex": "^3.6.0",
     "@xhs/fe-api-sign": "^1.0.0",
     "@xhs/http": "^1.0.0",
-    "@xhs/launcher": "^1.0.3",
+    "@xhs/launcher": "^1.0.0",
     {{#vuex}}
     "@xhs/launcher-plugin-store": "^1.0.0",
     {{/vuex}}
@@ -50,10 +50,5 @@
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  }
 }
